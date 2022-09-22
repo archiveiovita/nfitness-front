@@ -5,7 +5,9 @@
     <v-container class="product-page-area-inside">
       <v-row>
         <v-col md="5" xs="12">
-          <img src="/img/unsplash_F56Y7dgrAkc.png" alt="" class="main-product-image">
+<!--          <img src="/img/unsplash_F56Y7dgrAkc.png" alt="" class="main-product-image">-->
+          <img v-if="product.main_image"
+               :src="`https://back.chainlib.xyz/images/products/sm/${product.main_image.src}`" class="main-product-image">
         </v-col>
         <v-col md="7" xs="12" class="product-details">
           <h2>Wenning Strength Conjugate</h2>
@@ -34,6 +36,23 @@
                   allowfullscreen></iframe>
         </v-col>
       </v-row>
+
+      <v-row class="mt-8">
+        <v-col>
+          {{ product.translation.body }}
+        </v-col>
+      </v-row>
+
+      <v-row class="mt-8 text-center">
+        <v-col md="12">
+          <p class="product-price">30 NEAR</p>
+          <button class="button-view-1">
+            <v-icon dark>mdi-cart</v-icon>
+            Buy with near
+          </button>
+        </v-col>
+      </v-row>
+
     </v-container>
   </div>
 

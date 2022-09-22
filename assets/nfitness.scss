@@ -321,12 +321,20 @@ header {
   }
 
   .main-product-image {
-    width: 100%;
+    width: 95%;
+    border-radius: 30px;
   }
 
   h2 {
     text-transform: uppercase;
     font-size: 28px;
+  }
+
+  .product-price {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
   }
 }
 
@@ -373,3 +381,4 @@ header {
     margin: auto;
   }
 }
+

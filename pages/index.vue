@@ -73,16 +73,19 @@
 
             <v-col md="7" xs="12">
               <div class="product-view-1">
-                <img src="/img/unsplash_F56Y7dgrAkc.png" alt="">
+                <nuxt-link to="" class="product">
+                  <img src="/img/unsplash_F56Y7dgrAkc.png" alt="">
+                </nuxt-link>
                 <v-row class="details">
-                  <v-col xs="2" md="2">
-                    <img src="/img/Ellipse 95.png" alt="">
-                  </v-col>
-                  <v-col xs="7" md="7">
-                    <h4>Full Body Workout</h4>
+                  <v-col xs="9" md="" style="background-image: url('/img/Ellipse 95.png')" class="product-title">
+                    <h4>
+                      <nuxt-link to="" class="product">
+                        Full Body Workout
+                      </nuxt-link>
+                    </h4>
                     <p>3 plans, 124 exercices</p>
                   </v-col>
-                  <v-col xs="3" md="3" class="product-price">
+                  <v-col xs="3" md="3" class="product-price text-right">
                     <span>Highest Bid</span>
                     <p>0.25 NEAR</p>
                   </v-col>
@@ -161,9 +164,10 @@
               <home-carousel-products :products="item.view.products" :category="item.view"/>
 
               <div class="h-section__button">
-                <v-btn nuxt :to="`/${language.lang}/categories/${item.view.alias}`" outlined color="primary">
+                <v-btn nuxt :to="`/${language.lang}/categories/${item.view.alias}`" class="button-view-2">
                   View all
                 </v-btn>
+
               </div>
 
             </section>
