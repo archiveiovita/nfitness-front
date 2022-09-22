@@ -1,4 +1,4 @@
-# Chainlib NFT-marketplace
+# NFitness
 
 ## Build Setup
 
