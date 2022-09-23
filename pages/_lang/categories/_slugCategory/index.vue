@@ -27,11 +27,11 @@
                     </span>
                   </nuxt-link>
                 </h4>
-                <p>3 plans, 124 exercices</p>
+                <p>{{ (Math.random() * (10 - 1) + 1).toFixed(0) }} plans, {{ (Math.random() * (124 - 1) + 1).toFixed(0) }} exercices</p>
               </v-col>
               <v-col cols="3" md="3" class="product-price text-right">
                 <span>Highest Bid</span>
-                <p>0.25 NEAR</p>
+                <p>{{ (Math.random() * (10 - 1) + 1).toFixed(2) }} NEAR</p>
               </v-col>
             </v-row>
           </div>

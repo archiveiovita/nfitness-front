@@ -18,8 +18,8 @@
             <h3>{{ product.translation.name }}</h3>
 
             <div class="product-price">
-              <p>10 Near</p>
-              <span>1 of 514</span>
+              <p>{{ (Math.random() * (10 - 1) + 1).toFixed(2) }} Near</p>
+              <span>1 of {{ (Math.random() * (514 - 1) + 1).toFixed(0) }}</span>
             </div>
 
             <div class="product-params">

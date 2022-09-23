@@ -45,7 +45,7 @@
 
       <v-row class="mt-8 text-center">
         <v-col md="12">
-          <p class="product-price">30 NEAR</p>
+          <p class="product-price">{{ (Math.random() * (10 - 1) + 1).toFixed(2) }} NEAR</p>
           <button class="button-view-1">
             <v-icon dark>mdi-cart</v-icon>
             Buy with near
