@@ -1,8 +1,5 @@
 <template>
   <div class="faq">
-    <v-img src="/Main-banner.jpeg" class="banner-search">
-      <search/>
-    </v-img>
 
     <v-container>
       <v-row>
@@ -64,7 +61,7 @@
               <v-btn
                   class="mr-4"
                   @click="submit"
-                  color="#e96535"
+                  color="#3D00B7"
                   dark
               >
                 submit
@@ -209,6 +206,7 @@ export default {
 
 <style lang="scss">
 .faq {
+  margin-top: -60px;
   h1 {
     text-align: center;
   }
@@ -228,8 +226,8 @@ export default {
       position: absolute;
       display: inline-block;
       right: 15px;
-      color: #e96535;
-      border: 1px solid #e96535;
+      color: #3D00B7;
+      border: 1px solid #3D00B7;
       border-radius: 5px;
       padding: 3px;
       font-style: normal;
@@ -249,7 +247,7 @@ export default {
   }
 
   .v-alert--prominent .v-alert__icon.v-icon {
-    color: #e96535 !important;
+    color: #3D00B7 !important;
   }
 }
 </style>

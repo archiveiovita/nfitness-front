@@ -8,7 +8,33 @@
 
       <ul class="header-menu">
         <li>
-          <NuxtLink to="/ro/categories/books-for-children">Marketplace</NuxtLink>
+          <v-menu
+              open-on-hover
+              top
+              offset-Y
+          >
+            <template v-slot:activator="{ on, attrs }">
+
+              <a href="#"
+                 v-bind="attrs"
+                 v-on="on">
+                Marketplace
+              </a>
+
+            </template>
+
+            <v-list>
+              <v-list-item
+                  v-for="(item, index) in categories"
+                  :key="index"
+                  :to="`/ro/categories/${item.alias}`"
+                  nuxt
+              >
+                <v-list-item-title>{{ item.translation.name  }}</v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-menu>
+
         </li>
         <li>
           <NuxtLink to="/ro/faq">FAQ</NuxtLink>
@@ -22,7 +48,7 @@
 
       <search/>
 
-      <NuxtLink class="button-view-1"  to="/ro/plan">Upload plan</NuxtLink>
+      <NuxtLink class="button-view-1" to="/ro/plan">Upload plan</NuxtLink>
 
       <button class="button-view-2">Connect Wallet</button>
 
@@ -110,6 +136,9 @@ export default {
     display: inline-block;
     margin-left: 30px;
   }
+}
+.menuable__content__active {
+  top: 60px !important;
 }
 </style>
 

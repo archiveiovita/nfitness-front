@@ -1,10 +1,6 @@
 <template>
   <div class="contacts">
 
-    <v-img src="/Main-banner.jpeg" class="banner-search">
-      <search/>
-    </v-img>
-
     <v-container>
 
       <v-col class="col-md-12">
@@ -13,15 +9,18 @@
 
       <v-row id="contactsForm" class=" contacts__form">
         <v-col class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-          <p class="form___title mt-15">
-            Website: www.chainlib.xyz
+          <p class="mt-15">
+            Website: https://app.nfitness.space/
           </p>
           <p>
-            Email: chainlibdigital@gmail.com
+            Email: Nfitspace@Gmail.Com
+          </p>
+          <p>
+            Phone: +393487841378
           </p>
         </v-col>
         <v-col class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-          <h3 class="c-title my-3">
+          <h3 class="text-center my-3">
             {{ $trans('Contacts', 'getInTouch') }}
           </h3>
           <p>
@@ -66,7 +65,7 @@
             <v-btn
                 @click="submitFeedback()"
                 color="accent text--white"
-                class="mr-4 btn-primary-text"
+                class="mr-4 button-view-1"
             >
               {{ $trans('ContactsAndForms', 'sendButton') }}
             </v-btn>
@@ -160,6 +159,9 @@ export default {
 </script>
 
 <style>
+.contacts {
+  margin-top: -60px;
+}
 .c-title {
   font-size: 18px;
   padding-top: 30px;

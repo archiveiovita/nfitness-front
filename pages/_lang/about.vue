@@ -102,6 +102,7 @@ export default {
 
 <style lang="scss">
 .about {
+  margin-top: -60px;
   .about-headings {
     text-align: center;
     max-width: 800px;

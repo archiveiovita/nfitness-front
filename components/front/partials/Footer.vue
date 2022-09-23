@@ -1,5 +1,5 @@
 <template>
-  <v-container class="footer-area">
+  <v-container class="footer-area mb-12">
     <v-row>
       <v-col md="6" xs="12">
         <img src="/img/logo.png" alt="">
@@ -21,16 +21,16 @@
       <v-col md="3" xs="3" class="footer-menu">
         <ul>
           <li>
-            <NuxtLink to="/">Marketplace</NuxtLink>
+            <NuxtLink to="/ro/faq">FAQ</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/">Upload Plan</NuxtLink>
+            <NuxtLink to="/ro/plan">Upload Plan</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/">About</NuxtLink>
+            <NuxtLink to="/ro/about">About</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/">Contacts</NuxtLink>
+            <NuxtLink to="/ro/contacts">Contacts</NuxtLink>
           </li>
         </ul>
       </v-col>
