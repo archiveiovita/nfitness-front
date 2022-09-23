@@ -7,7 +7,7 @@
         <v-col md="5" xs="12">
 <!--          <img src="/img/unsplash_F56Y7dgrAkc.png" alt="" class="main-product-image">-->
           <img v-if="product.main_image"
-               :src="`https://back.chainlib.xyz/images/products/sm/${product.main_image.src}`" class="main-product-image">
+               :src="`https://back.chainlib.xyz/images/products/md/${product.main_image.src}`" class="main-product-image">
         </v-col>
         <v-col md="7" xs="12" class="product-details">
           <h2>Wenning Strength Conjugate</h2>

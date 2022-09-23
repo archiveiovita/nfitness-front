@@ -5,33 +5,33 @@
         <v-icon color="primary">mdi-close</v-icon>
       </v-list-item-icon>
     </v-list-item>
-    <v-list-item>
-      <v-list-item-content>
-        <v-dialog
-            v-model="changeLanguage"
-            width="400">
-          <template v-slot:activator="{ on, attrs }">
-            <v-list-item-title class="d-flex align-center userSettings" v-bind="attrs" v-on="on">
-              <span class="d-flex align-center">
-                {{ currency.abbr }} /
-                {{ language.lang }} /
-                <img class="ml-1"
-                     :src="`https://back.soledynft.shop/images/flags/24x24/${country.flag}`">
-              </span>
-              <v-spacer></v-spacer>
-              |
-              <v-spacer></v-spacer>
-              <span>{{ $trans('TehButtons', 'change') }}</span>
-            </v-list-item-title>
-          </template>
-          <language-modal @closeLanguageModal="changeLanguage = false"/>
-        </v-dialog>
-      </v-list-item-content>
-    </v-list-item>
+    <!--    <v-list-item>-->
+    <!--      <v-list-item-content>-->
+    <!--        <v-dialog-->
+    <!--            v-model="changeLanguage"-->
+    <!--            width="400">-->
+    <!--          <template v-slot:activator="{ on, attrs }">-->
+    <!--            <v-list-item-title class="d-flex align-center userSettings" v-bind="attrs" v-on="on">-->
+    <!--              <span class="d-flex align-center">-->
+    <!--                {{ currency.abbr }} /-->
+    <!--                {{ language.lang }} /-->
+    <!--                <img class="ml-1"-->
+    <!--                     :src="`https://back.soledynft.shop/images/flags/24x24/${country.flag}`">-->
+    <!--              </span>-->
+    <!--              <v-spacer></v-spacer>-->
+    <!--              |-->
+    <!--              <v-spacer></v-spacer>-->
+    <!--              <span>{{ $trans('TehButtons', 'change') }}</span>-->
+    <!--            </v-list-item-title>-->
+    <!--          </template>-->
+    <!--          <language-modal @closeLanguageModal="changeLanguage = false"/>-->
+    <!--        </v-dialog>-->
+    <!--      </v-list-item-content>-->
+    <!--    </v-list-item>-->
     <v-list-item @click="openDrawerTwoCatalog">
       <v-list-item-content>
         <v-list-item-title>
-          Books Catalog
+          Marketplace
         </v-list-item-title>
       </v-list-item-content>
       <v-list-item-icon>
@@ -54,10 +54,10 @@
       </v-list-item-content>
     </v-list-item>
 
-    <v-list-item nuxt :to="`/${language.lang}/propose-book`">
+    <v-list-item nuxt :to="`/${language.lang}/plan`">
       <v-list-item-content>
         <v-list-item-title>
-          Submit a Book Proposal
+          Upload Plan
         </v-list-item-title>
       </v-list-item-content>
     </v-list-item>
@@ -70,13 +70,11 @@
       </v-list-item-content>
     </v-list-item>
 
-    <v-list-item>
-
-      <v-list-item-content>
-                <NearAuth :title="'Sign In'"/>
-      </v-list-item-content>
-
-    </v-list-item>
+    <!--    <v-list-item>-->
+    <!--      <v-list-item-content>-->
+    <!--                <NearAuth :title="'Sign In'"/>-->
+    <!--      </v-list-item-content>-->
+    <!--    </v-list-item>-->
   </v-list>
 </template>
 

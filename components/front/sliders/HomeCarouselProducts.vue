@@ -10,7 +10,7 @@
         <div class="h-slider__item-inner">
           <nuxt-link :to="`/ro/categories/${category.alias}/${product.alias}`">
             <div class="h-slider__image">
-              <img :src="`https://back.chainlib.xyz/images/products/sm/${product.main_image.src}`">
+              <img :src="`https://back.chainlib.xyz/images/products/md/${product.main_image.src}`">
             </div>
           </nuxt-link>
 
@@ -24,8 +24,8 @@
 
             <div class="product-params">
               <span>Belly sport</span>
-              <span>Noel Munkey</span>
               <span>Pennyatwork</span>
+              <span>Noel Munkey</span>
             </div>
           </div>
         </div>
@@ -148,12 +148,15 @@ export default {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    align-items: center;
     span {
       border-radius: 20px;
       background-color: #f5f5f5;
       color: #5539A8;
       padding: 10px;
       font-size: 12px;
+      line-height: 1;
+      text-align: center;
     }
   }
 }

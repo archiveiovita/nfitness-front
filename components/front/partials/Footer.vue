@@ -1,7 +1,7 @@
 <template>
   <v-container class="footer-area mb-12">
     <v-row>
-      <v-col md="6" xs="12">
+      <v-col md="6" cols="12">
         <img src="/img/logo.png" alt="">
         <div class="social-links mt-4">
           <a href="https://www.linkedin.com/in/liliana-bahnaru-810107b7" target="_blank">
@@ -18,7 +18,7 @@
           </a>
         </div>
       </v-col>
-      <v-col md="3" xs="3" class="footer-menu">
+      <v-col md="3" cols="12" class="footer-menu">
         <ul>
           <li>
             <NuxtLink to="/ro/faq">FAQ</NuxtLink>

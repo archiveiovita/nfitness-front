@@ -2,7 +2,7 @@
   <div>
     <v-container>
       <v-row class="main-area">
-        <v-col md="6" xs="12">
+        <v-col md="6" cols="12">
           <h2>Train and Earn with the best NFT workout </h2>
           <p>Find the best workout/meal plans that suit You. Use it and write down Your experience and recommendations
             for
@@ -10,41 +10,42 @@
             will be sold by one user to another. Train & Earn! </p>
           <button class="button-view-1">Try Now</button>
           <v-row class="ratings">
-            <v-col md="3" xs="4">
+            <v-col md="3" cols="4">
               <h4>98k</h4>
               <p>Workouts</p>
             </v-col>
-            <v-col md="3" xs="4">
+            <v-col md="3" cols="4">
               <h4>12k</h4>
               <p>Auction</p>
             </v-col>
-            <v-col md="3" xs="4">
+            <v-col md="3" cols="4">
               <h4>15k</h4>
               <p>Trainers</p>
             </v-col>
           </v-row>
         </v-col>
-        <v-col md="6" xs="12">
+        <v-col md="6" cols="12">
           <img src="/img/1stgroup.png" alt="">
         </v-col>
       </v-row>
     </v-container>
+
     <div class="mint-buy-wrapper">
       <v-container>
         <v-row class="mint-buy-area">
-          <v-col md="5" xs="12">
+          <v-col md="5" cols="12">
             <h4>The NFT workout or meal plans price will increase the more times is used</h4>
           </v-col>
-          <v-col md="7" xs="12">
+          <v-col md="7" cols="12">
             <v-row>
-              <v-col md="6" xs="12">
+              <v-col md="6" cols="12">
                 <h5 style="background-image: url('/img/card-tick-1 1.png')">
                   Buy and train
                 </h5>
                 <p>Try the NFT workout/meal plan and add to NFT your experience and recommendations for the next users
                   (add excercisez/meals/notes, etc.)</p>
               </v-col>
-              <v-col md="6" xs="12">
+              <v-col md="6" cols="12">
                 <h5 style="background-image: url('/img/chart-square 2.png')">
                   Mint and earn
                 </h5>
@@ -59,7 +60,7 @@
 
     <v-container>
       <v-row class="create-own-area">
-        <v-col md="3" xs="12">
+        <v-col md="3" cols="12">
           <h5>
             Create your
             <span>collection</span>
@@ -68,16 +69,16 @@
             <span>collection</span>
           </h5>
         </v-col>
-        <v-col md="9" xs="12" class="products-view-1">
+        <v-col md="9" cols="12" class="products-view-1">
           <v-row>
 
-            <v-col md="7" xs="12">
+            <v-col md="7" cols="12">
               <div class="product-view-1">
                 <nuxt-link to="" class="product">
                   <img src="/img/unsplash_F56Y7dgrAkc.png" alt="">
                 </nuxt-link>
                 <v-row class="details">
-                  <v-col xs="9" md="" style="background-image: url('/img/Ellipse 95.png')" class="product-title">
+                  <v-col cols="9" md="" style="background-image: url('/img/Ellipse 95.png')" class="product-title">
                     <h4>
                       <nuxt-link to="" class="product">
                         Full Body Workout
@@ -85,7 +86,7 @@
                     </h4>
                     <p>3 plans, 124 exercices</p>
                   </v-col>
-                  <v-col xs="3" md="3" class="product-price text-right">
+                  <v-col cols="3" md="3" class="product-price text-right">
                     <span>Highest Bid</span>
                     <p>0.25 NEAR</p>
                   </v-col>
@@ -93,33 +94,33 @@
               </div>
             </v-col>
 
-            <v-col md="5" xs="12">
+            <v-col md="5" cols="12">
 
               <v-row class="product-view-2">
-                <v-col md="6" xs="6">
+                <v-col md="6" cols="6">
                   <img src="/img/Group 88.png" alt="">
                 </v-col>
-                <v-col xs="6" md="6" class="details">
+                <v-col cols="6" md="6" class="details">
                   <h4>Full Body Workout</h4>
                   <span class="product-price" style="background-image: url('/img/Ellipse 95.png')">0.25 NEAR</span>
                 </v-col>
               </v-row>
 
               <v-row class="product-view-2">
-                <v-col md="6" xs="6">
+                <v-col md="6" cols="6">
                   <img src="/img/unsplash_Tyg0rVhOTrE.png" alt="">
                 </v-col>
-                <v-col xs="6" md="6" class="details">
+                <v-col cols="6" md="6" class="details">
                   <h4>Full Body Workout</h4>
                   <span class="product-price" style="background-image: url('/img/Ellipse 95.png')">0.25 NEAR</span>
                 </v-col>
               </v-row>
 
               <v-row class="product-view-2">
-                <v-col md="6" xs="6">
+                <v-col md="6" cols="6">
                   <img src="/img/unsplash_wHJ5L9KGTl4.png" alt="">
                 </v-col>
-                <v-col xs="6" md="6" class="details">
+                <v-col cols="6" md="6" class="details">
                   <h4>Full Body Workout</h4>
                   <span class="product-price" style="background-image: url('/img/Ellipse 95.png')">0.25 NEAR</span>
                 </v-col>
@@ -133,10 +134,10 @@
 
     <v-container>
       <v-row class="add-training-area">
-        <v-col md="6" xs="12">
+        <v-col md="6" cols="12">
           <img src="/img/Group300.png" alt="">
         </v-col>
-        <v-col md="6" xs="12">
+        <v-col md="6" cols="12">
           <h4>Add Your training experience to Collection and sell it as NFT at a higher price</h4>
           <p>You can buy I.E. a Meal plan, a Pushups plan and an Abs plan from different trainers; combine them into one
             workout/meal plans collection; add to it Your experience; sell it at a much higher price to another user;
@@ -164,9 +165,11 @@
               <home-carousel-products :products="item.view.products" :category="item.view"/>
 
               <div class="h-section__button">
-                <v-btn nuxt :to="`/${language.lang}/categories/${item.view.alias}`" class="button-view-2">
+
+                <NuxtLink :to="`/${language.lang}/categories/${item.view.alias}`"
+                          class="button-view-2 button-customize">
                   View all
-                </v-btn>
+                </NuxtLink>
 
               </div>
 
@@ -219,5 +222,9 @@ export default {
   font-weight: 500;
   text-transform: uppercase;
   font-size: 30px;
+}
+
+.button-customize {
+  background-color: #FFF !important;
 }
 </style>

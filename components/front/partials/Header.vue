@@ -2,25 +2,20 @@
   <v-sheet height="100">
 
     <v-app-bar fixed color="body">
+      <v-app-bar-nav-icon color="primary" @click.stop="drawerOne = !drawerOne" class="mob-only"/>
+
+      <v-spacer class="mob-only"/>
+
       <NuxtLink to="/">
         <v-img src="/img/logo.png" alt="logo"/>
       </NuxtLink>
 
-      <ul class="header-menu">
+
+      <ul class="header-menu desktop-only">
         <li>
-          <v-menu
-              open-on-hover
-              top
-              offset-Y
-          >
+          <v-menu open-on-hover top offset-Y>
             <template v-slot:activator="{ on, attrs }">
-
-              <a href="#"
-                 v-bind="attrs"
-                 v-on="on">
-                Marketplace
-              </a>
-
+              <a href="#" v-bind="attrs" v-on="on">Marketplace</a>
             </template>
 
             <v-list>
@@ -30,11 +25,10 @@
                   :to="`/ro/categories/${item.alias}`"
                   nuxt
               >
-                <v-list-item-title>{{ item.translation.name  }}</v-list-item-title>
+                <v-list-item-title>{{ item.translation.name }}</v-list-item-title>
               </v-list-item>
             </v-list>
           </v-menu>
-
         </li>
         <li>
           <NuxtLink to="/ro/faq">FAQ</NuxtLink>
@@ -46,13 +40,13 @@
 
       <v-spacer/>
 
-      <search/>
+      <span class="desktop-only">
+        <search class="desktop-only"/>
+      </span>
 
-      <NuxtLink class="button-view-1" to="/ro/plan">Upload plan</NuxtLink>
+      <NuxtLink class="button-view-1 desktop-only" to="/ro/plan">Upload plan</NuxtLink>
 
-      <button class="button-view-2">Connect Wallet</button>
-
-      <!--      <v-app-bar-nav-icon color="primary" @click.stop="drawerOne = !drawerOne"/>-->
+      <button class="button-view-2 desktop-only">Connect Wallet</button>
 
       <!--      <cart/>-->
 
@@ -137,6 +131,7 @@ export default {
     margin-left: 30px;
   }
 }
+
 .menuable__content__active {
   top: 60px !important;
 }

@@ -8,23 +8,28 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col md="4" xs="12" class="products-view-1" v-for="(item, key) in products" :key="key">
+        <v-col md="4" cols="12" class="products-view-1" v-for="(item, key) in products" :key="key">
           <div class="product-view-1">
             <!--            <img src="/img/unsplash_F56Y7dgrAkc.png" alt="">-->
             <nuxt-link :to="`/ro/categories/${category.alias}/${item.product.alias}`" class="product">
               <img v-if="item.product.main_image"
-                   :src="`https://back.chainlib.xyz/images/products/sm/${item.product.main_image.src}`" alt="">
+                   :src="`https://back.chainlib.xyz/images/products/md/${item.product.main_image.src}`" alt="">
             </nuxt-link>
             <v-row class="details">
-              <v-col xs="9" md="" style="background-image: url('/img/Ellipse 95.png')" class="product-title">
+              <v-col cols="9" md="" style="background-image: url('/img/Ellipse 95.png')" class="product-title">
                 <h4>
                   <nuxt-link :to="`/ro/categories/${category.alias}/${item.product.alias}`" class="product">
-                    {{ item.product.translation.name.slice(0, 26) }}...
+                    <span v-if="item.product.translation.name.length > 23">
+                      {{ item.product.translation.name.slice(0, 23) }}...
+                    </span>
+                    <span v-else>
+                      {{ item.product.translation.name }}
+                    </span>
                   </nuxt-link>
                 </h4>
                 <p>3 plans, 124 exercices</p>
               </v-col>
-              <v-col xs="3" md="3" class="product-price text-right">
+              <v-col cols="3" md="3" class="product-price text-right">
                 <span>Highest Bid</span>
                 <p>0.25 NEAR</p>
               </v-col>
