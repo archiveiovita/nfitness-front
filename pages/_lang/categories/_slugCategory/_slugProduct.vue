@@ -10,7 +10,7 @@
                :src="`https://back.nfitness.space/images/products/md/${product.main_image.src}`" class="main-product-image">
         </v-col>
         <v-col md="7" xs="12" class="product-details">
-          <h2>Wenning Strength Conjugate</h2>
+          <h2>{{ product.translation.name }}</h2>
           <div class="coaches">
             <p>Coaches</p>
             <h3>Matt Wenning</h3>
@@ -45,10 +45,10 @@
 
       <v-row class="mt-8 text-center">
         <v-col md="12">
-          <p class="product-price">{{ (Math.random() * (10 - 1) + 1).toFixed(2) }} NEAR</p>
+          <p class="product-price">{{ (Math.random() * (10 - 1) + 1).toFixed(2) }} ETH</p>
           <button class="button-view-1">
             <v-icon dark>mdi-cart</v-icon>
-            Buy with near
+            Buy now
           </button>
         </v-col>
       </v-row>

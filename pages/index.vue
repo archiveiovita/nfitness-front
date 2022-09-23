@@ -88,7 +88,7 @@
                   </v-col>
                   <v-col cols="3" md="3" class="product-price text-right">
                     <span>Highest Bid</span>
-                    <p>0.25 NEAR</p>
+                    <p>0.25 ETH</p>
                   </v-col>
                 </v-row>
               </div>
@@ -102,7 +102,7 @@
                 </v-col>
                 <v-col cols="6" md="6" class="details">
                   <h4>Full Body Workout</h4>
-                  <span class="product-price" style="background-image: url('/img/Ellipse 95.png')">0.25 NEAR</span>
+                  <span class="product-price" style="background-image: url('/img/Ellipse 95.png')">0.25 ETH</span>
                 </v-col>
               </v-row>
 
@@ -112,7 +112,7 @@
                 </v-col>
                 <v-col cols="6" md="6" class="details">
                   <h4>Full Body Workout</h4>
-                  <span class="product-price" style="background-image: url('/img/Ellipse 95.png')">0.25 NEAR</span>
+                  <span class="product-price" style="background-image: url('/img/Ellipse 95.png')">0.25 ETH</span>
                 </v-col>
               </v-row>
 
@@ -122,7 +122,7 @@
                 </v-col>
                 <v-col cols="6" md="6" class="details">
                   <h4>Full Body Workout</h4>
-                  <span class="product-price" style="background-image: url('/img/Ellipse 95.png')">0.25 NEAR</span>
+                  <span class="product-price" style="background-image: url('/img/Ellipse 95.png')">0.25 ETH</span>
                 </v-col>
               </v-row>
 

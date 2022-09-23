@@ -31,7 +31,7 @@
               </v-col>
               <v-col cols="3" md="3" class="product-price text-right">
                 <span>Highest Bid</span>
-                <p>{{ (Math.random() * (10 - 1) + 1).toFixed(2) }} NEAR</p>
+                <p>{{ (Math.random() * (10 - 1) + 1).toFixed(2) }} ETH</p>
               </v-col>
             </v-row>
           </div>

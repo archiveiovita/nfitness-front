@@ -3,66 +3,83 @@
 
     <v-container>
       <div class="about-headings">
-        <h1>CHAINLIB STORY</h1>
-        <h3>DIGITAL "SHELF SPACE" FOR AUTHORS WITH COPYRIGHT PROTECTION ENSURED BY BLOCKCHAIN TECHNOLOGY</h3>
+        <h1>NFiTNESS Marketplace</h1>
+        <h3>The first P2P fitness blockchain marketplace based on the collective experience</h3>
       </div>
 
       <v-row>
         <v-col class="col-md-6">
-          <v-img src="/About-section-1-image-1.jpeg" alt=""></v-img>
+          <v-img src="/img/About-1.png" alt="" height="520px"></v-img>
         </v-col>
         <v-col class="col-md-6">
-          <v-img src="/About-section-1-image-2.jpeg" alt=""></v-img>
+          <v-img src="/img/About-2.png" alt="" height="520px"></v-img>
         </v-col>
 
         <v-col class="col-md-12">
-          <h2>ABOUT THIS PROJECT</h2>
-          <p class="text-center">There are 2 big problems that authors face everywhere. The first problem is copyright
-            protection. Since the
-            law on authorship differs from country to country, a book written and registered in one country can be
-            easily reprinted under another name in another country - and have every right to do so. The second problem
-            is facing unknown authors from small countries. Usually, the publishing houses refuse to publish their
-            works. This is why and how the ChainLib came to life - digital "shelf space" for authors all over the world
-            with copyright protection ensured by blockchain technology
+          <h2>About the Project</h2>
+          <p class="text-center">
+            The marketplace allows fitness trainers to upload their workout/meal plans and mint them as NFTs. <br>
+            Users can buy these NFTs, mint out of them new NFTs, by adding to them the experience of their usage, and
+            resell them. The more experience of using a workout/meal plan users attach, the more valuable and expensive
+            it becomes. The more royalty the trainer and previous owners get from each transaction.
           </p>
-          <h2>CHAINLIB AUTHORS</h2>
+          <h2>NFiTNESS Trainers/Coaches</h2>
         </v-col>
 
         <v-col class="col-md-5">
-          <img src="/About-section-2-authors--image-1.png" height="620px">
+          <img src="/img/Coach-1.png" height="669px">
         </v-col>
         <v-col class="col-md-7">
-          <img src="/About-section-2-authors--image-2.png" height="620px">
+          <img src="/img/Coach-2.png">
         </v-col>
 
         <v-col class="col-md-12">
-          <h2>EXAMPLES OF WORKS ON CHAINLIB</h2>
+          <h2>EXAMPLES OF WORKOUT/MEAL PLANS ON NFiTNESS</h2>
         </v-col>
 
         <v-col class="col-md-3">
-          <v-img src="/About-section-3-works-image-1.jpeg"></v-img>
+          <v-img src="/img/plan-1.png" height="280px"></v-img>
         </v-col>
         <v-col class="col-md-3">
-          <v-img src="/About-section-3-works-image-2.jpeg"></v-img>
+          <v-img src="/img/plan-2.png" height="280px"></v-img>
         </v-col>
         <v-col class="col-md-3">
-          <v-img src="/About-section-3-works-image-3.jpeg"></v-img>
+          <v-img src="/img/plan-3.png" height="280px"></v-img>
         </v-col>
         <v-col class="col-md-3">
-          <v-img src="/About-section-3-works-image-4.jpeg"></v-img>
+          <v-img src="/img/plan-4.png" height="280px"></v-img>
         </v-col>
         <v-col class="col-md-3">
-          <v-img src="/About-section-3-works-image-5.jpeg"></v-img>
+          <v-img src="/img/plan-5.png" height="280px"></v-img>
         </v-col>
         <v-col class="col-md-3">
-          <v-img src="/About-section-3-works-image-6.jpeg"></v-img>
+          <v-img src="/img/plan-6.png" height="280px"></v-img>
         </v-col>
         <v-col class="col-md-3">
-          <v-img src="/About-section-3-works-image-7.jpeg"></v-img>
+          <v-img src="/img/plan-7.jpeg" height="280px"></v-img>
         </v-col>
         <v-col class="col-md-3">
-          <v-img src="/About-section-3-works-image-8.jpeg"></v-img>
+          <v-img src="/img/plan-8.jpeg" height="280px"></v-img>
         </v-col>
+
+        <!--        <v-col class="col-md-3">-->
+        <!--          <v-img src="/img/plan-1.png"></v-img>-->
+        <!--        </v-col>-->
+        <!--        <v-col class="col-md-3">-->
+        <!--          <v-img src="/About-section-3-works-image-4.jpeg"></v-img>-->
+        <!--        </v-col>-->
+        <!--        <v-col class="col-md-3">-->
+        <!--          <v-img src="/About-section-3-works-image-5.jpeg"></v-img>-->
+        <!--        </v-col>-->
+        <!--        <v-col class="col-md-3">-->
+        <!--          <v-img src="/About-section-3-works-image-6.jpeg"></v-img>-->
+        <!--        </v-col>-->
+        <!--        <v-col class="col-md-3">-->
+        <!--          <v-img src="/About-section-3-works-image-7.jpeg"></v-img>-->
+        <!--        </v-col>-->
+        <!--        <v-col class="col-md-3">-->
+        <!--          <v-img src="/About-section-3-works-image-8.jpeg"></v-img>-->
+        <!--        </v-col>-->
       </v-row>
     </v-container>
 
@@ -103,6 +120,7 @@ export default {
 <style lang="scss">
 .about {
   margin-top: -60px;
+
   .about-headings {
     text-align: center;
     max-width: 800px;

@@ -9,20 +9,16 @@
 
         <v-col class="col-md-12 col-12">
           <p>
-            1. Ask The Librarian is a free remote information support service that provides answers to the user's
-            questions, pointing / directing him / her to the information resources in the library collection and the
-            internet.
+            1. Ask The Trainers is a free remote information support service that provides answers to the user's
+            questions, pointing/directing to the information resources in the NFiTNESS Ecosystem
           </p>
           <p>
-            2. Bibliographers answer any question of the user regarding the needs of documentation and study, offering
-            him:
+            2. The Trainers answer users' any questions regarding the needs for train & earn, offering them:
           </p>
           <ul>
-            <li> general information about the library and services;</li>
-            <li> answers to thematic requests without deepening the field, factographic and clarification requests;</li>
-            <li> references about areas of community interest: addresses, telephone numbers of different institutions,
-              local public administration, urban transport traffic, etc.
-            </li>
+            <li>general information about NFiTNESS Ecosystem</li>
+            <li>information about train & earn concept</li>
+            <li>information about workout/meal plans as NFT</li>
           </ul>
         </v-col>
 
@@ -79,7 +75,7 @@
               class="faq-question"
               shaped
           >
-            How do I download and check out an ebook?
+            How do I upload a workout/meal plan?
             <span>01-20-2022</span>
           </v-alert>
           <v-alert
@@ -89,9 +85,7 @@
               class="faq-answer"
               shaped
           >
-            When connected to the internet, you can choose Read Online or PDF Full Text to read an ebook. Downloading is
-            not required.Most ebooks also allow downloading of pages or chapters, up to a maximum per session set by the
-            publisher. The PDF downloads can be saved to your device and do not expire.
+            In the topbar click the button "Upload plan", fill out the form, upload the images and here You go!
           </v-alert>
         </v-col>
         <v-col class="col-md-12">
@@ -103,7 +97,7 @@
               class="faq-question"
               shaped
           >
-            Is there any read & earn program working?
+            Is there any train & earn program working?
             <span>03-06-2022</span>
           </v-alert>
           <v-alert
@@ -113,8 +107,8 @@
               class="faq-answer"
               shaped
           >
-            Yes, it is under development now. In future, the users will be rewarded through tokens and NFT for each
-            purchased and read book
+            The marketplace allows fitness trainers to upload their workout/meal plans and mint them as NFTs. Users can
+            buy these NFTs, mint out of them new NFTs, by adding to them the experience of their usage and resell them.
           </v-alert>
         </v-col>
         <v-col class="col-md-12">
@@ -126,7 +120,7 @@
               class="faq-question"
               shaped
           >
-            Hi. Is it possible to buy the books as NFT?
+            Hi. Is it possible to buy the workout/meal plans as NFT?
             <span>26-05-2022</span>
           </v-alert>
           <v-alert
@@ -157,7 +151,7 @@ export default {
   validations: {
     name: {required, maxLength: maxLength(10)},
     email: {required, email},
-    question: {required,  maxLength: maxLength(120)}
+    question: {required, maxLength: maxLength(120)}
   },
 
   data: () => ({
@@ -207,6 +201,7 @@ export default {
 <style lang="scss">
 .faq {
   margin-top: -60px;
+
   h1 {
     text-align: center;
   }
