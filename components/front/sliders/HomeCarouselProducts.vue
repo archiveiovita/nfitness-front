@@ -10,7 +10,7 @@
         <div class="h-slider__item-inner">
           <nuxt-link :to="`/ro/categories/${category.alias}/${product.alias}`">
             <div class="h-slider__image">
-              <img :src="`https://back.chainlib.xyz/images/products/md/${product.main_image.src}`">
+              <img :src="`https://back.nfitness.space/images/products/md/${product.main_image.src}`">
             </div>
           </nuxt-link>
 

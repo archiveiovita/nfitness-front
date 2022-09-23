@@ -13,7 +13,7 @@
             <!--            <img src="/img/unsplash_F56Y7dgrAkc.png" alt="">-->
             <nuxt-link :to="`/ro/categories/${category.alias}/${item.product.alias}`" class="product">
               <img v-if="item.product.main_image"
-                   :src="`https://back.chainlib.xyz/images/products/md/${item.product.main_image.src}`" alt="">
+                   :src="`https://back.nfitness.space/images/products/md/${item.product.main_image.src}`" alt="">
             </nuxt-link>
             <v-row class="details">
               <v-col cols="9" md="" style="background-image: url('/img/Ellipse 95.png')" class="product-title">
