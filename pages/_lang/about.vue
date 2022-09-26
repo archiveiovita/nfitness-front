@@ -93,7 +93,7 @@ export default {
   layout: "default",
   head() {
     return {
-      title: this.title,
+      title: 'NFITNESS About',
       meta: [
         {
           hid: 'description',

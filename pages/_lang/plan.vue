@@ -205,7 +205,7 @@ export default {
   components: {Search},
   head() {
     return {
-      title: this.title,
+      title: "NFITNESS Upload Plan",
       meta: [
         {
           hid: 'description',

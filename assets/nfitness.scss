@@ -338,6 +338,7 @@ header {
     text-align: center;
     font-size: 30px;
     font-weight: 600;
+    color: #00AC4F;
   }
 }
 
@@ -382,6 +383,135 @@ header {
   .plan-form {
     max-width: 700px;
     margin: auto;
+  }
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+
+  h4 {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  h5 {
+    font-size: 20px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    background-size: auto 90%;
+    margin-bottom: 15px;
+  }
+
+  p {
+    color: #696969;
+    padding-left: 40px;
+    font-size: 14px;
+  }
+}
+
+.equipment {
+  border-top: 1px solid #979797;
+  padding: 50px 0;
+  p {
+    margin-left: 30px;
+  }
+}
+
+.bottom-image {
+  background-size: 100% 75%;
+  background-position: center 75px;
+  text-align: center;
+  img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.week-graph {
+  padding: 15px;
+  overflow-Y: scroll;
+  .week-graph-inside {
+    min-width: 2300px;
+
+    overflow: hidden;
+    .week-graph-item {
+      min-height: 475px;
+      width: 300px;
+      border: 1px solid #f7f7f7;
+      box-shadow: 0 1px 3px rgb(0 0 0 / 12%);
+      margin: 10px;
+      padding: 15px;
+      float: left;
+      h3 {
+        font-size: 24px;
+        font-weight: 700;
+      }
+      h4 {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+          .week-graph-category {
+            display: block;
+            border: 1px solid #2c2c2e;
+            border-radius: 50%;
+            height: 24px;
+            width: 24px;
+            text-align: center;
+            font-size: 12px;
+            line-height: 24px;
+            color: #2c2c2e;
+            margin-right: 15px;
+          }
+          p {
+            padding: 0;
+            margin: 0;
+            span {
+              display: block;
+              color: #2c2c2e;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.trains-area {
+  background-color: #000;
+  margin-top: 50px;
+  text-align: center;
+  .trains-area-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    width: 100%;
+  }
+  h3 {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  p {
+    color: #FFF;
+    max-width: 80%;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 400;
   }
 }
 

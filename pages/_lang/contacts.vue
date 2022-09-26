@@ -96,7 +96,7 @@ export default {
   components: {Search},
   head() {
     return {
-      title: this.title,
+      title: 'NFITNESS Contacts',
       meta: [
         {
           hid: 'description',

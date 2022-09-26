@@ -36,6 +36,7 @@
           <v-col md="5" cols="12">
             <h4>The NFT workout or meal plans price will increase the more times is used</h4>
           </v-col>
+
           <v-col md="7" cols="12">
             <v-row>
               <v-col md="6" cols="12">

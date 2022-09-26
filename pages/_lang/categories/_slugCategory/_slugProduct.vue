@@ -5,9 +5,10 @@
     <v-container class="product-page-area-inside">
       <v-row>
         <v-col md="5" xs="12">
-<!--          <img src="/img/unsplash_F56Y7dgrAkc.png" alt="" class="main-product-image">-->
+          <!--          <img src="/img/unsplash_F56Y7dgrAkc.png" alt="" class="main-product-image">-->
           <img v-if="product.main_image"
-               :src="`https://back.nfitness.space/images/products/md/${product.main_image.src}`" class="main-product-image">
+               :src="`https://back.nfitness.space/images/products/md/${product.main_image.src}`"
+               class="main-product-image">
         </v-col>
         <v-col md="7" xs="12" class="product-details">
           <h2>{{ product.translation.name }}</h2>
@@ -15,6 +16,7 @@
             <p>Coaches</p>
             <h3>Matt Wenning</h3>
           </div>
+
           <p class="mt-4">Bodybuilding, Women's Training, Powerlifting</p>
 
           <div class="rating">
@@ -22,7 +24,7 @@
             <span>4.9 (15 ratings)</span>
           </div>
 
-          <h3 class="mt-8">Details:</h3>
+          <h3 class="mt-8 text-uppercase">Details:</h3>
           <properties-area :properties="properties"></properties-area>
 
         </v-col>
@@ -53,7 +55,313 @@
         </v-col>
       </v-row>
 
+      <v-row class="features">
+        <v-col col="12" md="3">
+          <h2>Features</h2>
+        </v-col>
+        <v-col md="9" cols="12">
+          <v-row>
+            <v-col md="6" cols="12">
+              <h5 style="background-image: url('/img/icon1.png')">
+                Access to your coaches
+              </h5>
+              <p>Teddy will be around to help you navigate through the Wenning Strength Programming Allow 24-36 Hours
+                for Response.
+              </p>
+            </v-col>
+            <v-col md="6" cols="12">
+              <h5 style="background-image: url('/img/ProgrammingCopy.png')">
+                Programing 4 days per week
+              </h5>
+              <p>2 Max Effort Lifts, 1 Upper, 1 Lower, 2 Dynamic Efforts Lifts, 1 Upper, 2 Lower </p>
+            </v-col>
+            <v-col md="6" cols="12">
+              <h5 style="background-image: url('/img/VideoCopy.png')">
+                Exercise Video Guidance
+              </h5>
+              <p>Instructional videos to guide your practice and make execution easy</p>
+            </v-col>
+            <v-col md="6" cols="12">
+              <h5 style="background-image: url('/img/CoachingCopy.png')">
+                Detailed, expert instruction
+              </h5>
+              <p>Coaches who will hold your accountable and provide the feedback you need to grow</p>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
+
+      <v-row class="equipment">
+        <v-col md="3" cols="12">
+          <h2>Equipment</h2>
+        </v-col>
+        <v-col md="9" cols="12">
+          <v-row>
+            <v-col md="6" cols="12">
+              <h3>
+                <v-icon>mdi-check-all</v-icon>
+                Required
+              </h3>
+              <p>Barbell // Dumbbells // Bands</p>
+            </v-col>
+            <v-col md="6" cols="12">
+              <h3>
+                <v-icon>mdi-check-all</v-icon>
+                Recommended
+              </h3>
+              <p>Specialty Bar // Chains</p>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
     </v-container>
+
+    <div class="bottom-image" style="background-image: url('/img/ExampleImage2.jpeg')">
+      <img src="/img/phoneMockupDesktop.png">
+    </div>
+
+    <div class="week-graph">
+      <v-container>
+        <v-row>
+          <v-col>
+            <h2 class="mb-4">Sample Week</h2>
+            <h3 class="mb-4">I will write fresh programming weekly. You’ll get notifications when they’re ready</h3>
+          </v-col>
+        </v-row>
+      </v-container>
+      <div class="week-graph-inside">
+        <div class="week-graph-item">
+          <h3>Sunday</h3>
+          <h4>Max Effort Lower</h4>
+          <ul>
+            <li>
+              <span class="week-graph-category">A1</span>
+              <p><span><b>Belt Squats</b></span><span>4 x 25 @ 5</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">A2</span>
+              <p><span><b>Decline Sit Ups</b></span><span>4 x 25 @ 5</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">A3</span>
+              <p><span><b>Reverse Hyper</b></span><span>4 x 25 @ 5</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">B</span>
+              <p><span><b>Pin Pulls</b></span><span>4 x 25 @ 5</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">B</span>
+              <p><span><b>Pin Pulls</b></span><span>6 x 5</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">C1</span>
+              <p><span><b>Chest Supported Shrugs</b></span><span>3 x 10 @ 8, 9, 10</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">C2</span>
+              <p><span><b>Grip Machine</b></span><span>3 x MAX</span></p>
+            </li>
+          </ul>
+        </div>
+        <div class="week-graph-item">
+          <h3>Monday</h3>
+          <h4>Max Effort Lower</h4>
+          <ul>
+            <li>
+              <span class="week-graph-category">A1</span>
+              <p><span><b>DB Flat Bench Press</b></span><span>3 x 25</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">A2</span>
+              <p><span><b>Fat Bar Pulldowns</b></span><span>3 x 25</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">A3</span>
+              <p><span><b>Incline DB Fold In's</b></span><span>4 x 25 @ 5</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">B</span>
+              <p><span><b>Decline Bench Press with Chains</b></span><span>3 x 25</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">B</span>
+              <p><span><b>Cable Flys</b></span><span>6 x 5</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">C1</span>
+              <p><span><b>Banded Tricep Pushdowns</b></span><span>3 x 45 @ 8</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">C2</span>
+              <p><span><b>Grip Machine</b></span><span>3 x 45</span></p>
+            </li>
+          </ul>
+        </div>
+        <div class="week-graph-item">
+          <h3>Tuesday</h3>
+          <h4>REST</h4>
+          <ul>
+            <li>
+              <span class="week-graph-category">A</span>
+              <p><span><b>REST</b></span><span></span></p>
+            </li>
+          </ul>
+        </div>
+        <div class="week-graph-item">
+          <h3>Wednesday</h3>
+          <h4>Max Effort Lower</h4>
+          <ul>
+            <li>
+              <span class="week-graph-category">A1</span>
+              <p><span><b>Belt Squats</b></span><span>4 x 25 @ 5</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">A2</span>
+              <p><span><b>Decline Sit Ups</b></span><span>4 x 25 @ 5</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">A3</span>
+              <p><span><b>Reverse Hyper</b></span><span>4 x 25 @ 5</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">B</span>
+              <p><span><b>Pin Pulls</b></span><span>4 x 25 @ 5</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">B</span>
+              <p><span><b>Pin Pulls</b></span><span>6 x 5</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">C1</span>
+              <p><span><b>Chest Supported Shrugs</b></span><span>3 x 10 @ 8, 9, 10</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">C2</span>
+              <p><span><b>Grip Machine</b></span><span>3 x MAX</span></p>
+            </li>
+          </ul>
+        </div>
+        <div class="week-graph-item">
+          <h3>Thursday</h3>
+          <h4>Max Effort Lower</h4>
+          <ul>
+            <li>
+              <span class="week-graph-category">A1</span>
+              <p><span><b>DB Flat Bench Press</b></span><span>3 x 25</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">A2</span>
+              <p><span><b>Fat Bar Pulldowns</b></span><span>3 x 25</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">A3</span>
+              <p><span><b>Incline DB Fold In's</b></span><span>4 x 25 @ 5</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">B</span>
+              <p><span><b>Decline Bench Press with Chains</b></span><span>3 x 25</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">B</span>
+              <p><span><b>Cable Flys</b></span><span>6 x 5</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">C1</span>
+              <p><span><b>Banded Tricep Pushdowns</b></span><span>3 x 45 @ 8</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">C2</span>
+              <p><span><b>Grip Machine</b></span><span>3 x 45</span></p>
+            </li>
+          </ul>
+        </div>
+        <div class="week-graph-item">
+          <h3>Friday</h3>
+          <h4>REST</h4>
+          <ul>
+            <li>
+              <span class="week-graph-category">A</span>
+              <p><span><b>REST</b></span><span></span></p>
+            </li>
+          </ul>
+        </div>
+        <div class="week-graph-item">
+          <h3>Saturday</h3>
+          <h4>Max Effort Lower</h4>
+          <ul>
+            <li>
+              <span class="week-graph-category">A1</span>
+              <p><span><b>DB Flat Bench Press</b></span><span>3 x 25</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">A2</span>
+              <p><span><b>Fat Bar Pulldowns</b></span><span>3 x 25</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">A3</span>
+              <p><span><b>Incline DB Fold In's</b></span><span>4 x 25 @ 5</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">B</span>
+              <p><span><b>Decline Bench Press with Chains</b></span><span>3 x 25</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">B</span>
+              <p><span><b>Cable Flys</b></span><span>6 x 5</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">C1</span>
+              <p><span><b>Banded Tricep Pushdowns</b></span><span>3 x 45 @ 8</span></p>
+            </li>
+            <li>
+              <span class="week-graph-category">C2</span>
+              <p><span><b>Grip Machine</b></span><span>3 x 45</span></p>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="trains-area">
+      <v-row class="trains-area-row">
+        <v-col md="6" cols="12">
+          <img src="/img/1636150878_121218_orig.jpeg" alt="">
+        </v-col>
+        <v-col md="6" cols="12">
+          <h3>Train Like I do</h3>
+          <p>You deserve to get the results you're after. If you're willing to put in the work week in and week out, I'm
+            going to show you exactly how I train so that you too can get results that make you proud AF.
+          </p>
+        </v-col>
+      </v-row>
+      <v-row class="trains-area-row">
+        <v-col md="6" cols="12">
+          <h3>Stop Guessing What To Do</h3>
+          <p>I'll give you detailed instruction for each of the 5 training days each week + video demos of me showing
+            you exactly what I'm looking for. The days of you wandering the gym wondering how to get to where you wanna
+            go are over!
+          </p>
+        </v-col>
+        <v-col md="6" cols="12">
+          <img src="/img/1636150870_981077_orig.jpeg" alt="">
+        </v-col>
+      </v-row>
+      <v-row class="trains-area-row">
+        <v-col md="6" cols="12">
+          <img src="/img/1636150860_112978_orig.jpeg" alt="">
+        </v-col>
+        <v-col md="6" cols="12">
+          <h3>Feel and Look YOUR Best</h3>
+          <p>I want to empower YOU with a plan that makes you feel like you're at your best. I'm committed to making
+            sure that you get everything you deserve from this membership and if you put in the work, you'll be blown
+            away with what we can accomplish together. I guarantee it.
+          </p>
+        </v-col>
+      </v-row>
+    </div>
   </div>
 
   <!--  <div class="oneProduct-content" v-if="product">-->
